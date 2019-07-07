@@ -7,55 +7,10 @@ import './img/bg.png';
 import './img/circle.png';
 import './img/competentions.png';
 
-import regions from './regions.json'
-
-const directions = [ // todo можно больше
-  { value: 'yaroslavl', label: 'Здравоохранение' },
-  { value: 'kostroma', label: 'Информационные технологии' },
-  { value: 'ivanovo', label: 'Строительство' },
-];
-
-const data = [
-  {year: '2018', count: 20, additional: {
-    shool: [["Выпуск", "0 тыс."]],
-    university: [["Гос", "716 тыс."], ["Не гос", "716 тыс."]],
-    work: [["Вакансии", "716 тыс."]],
-  }},
-  {year: '2019', count: 19, additional: {
-    shool: [["Выпуск", "71 тыс."]],
-    university: [["Гос", "16 тыс."], ["Не гос", "7 тыс."]],
-    work: [["Вакансии", "76 тыс."]],
-  }},
-  {year: '2020', count: 19, additional: {
-    shool: [["Выпуск", "716 тыс."]],
-    university: [["Гос", "716 тыс."], ["Не гос", "716 тыс."]],
-    work: [["Вакансии", "716 тыс."]],
-  }},
-  {year: '2021', count: 22, additional: {
-    shool: [["Выпуск", "716 тыс."]],
-    university: [["Гос", "716 тыс."], ["Не гос", "716 тыс."]],
-    work: [["Вакансии", "716 тыс."]],
-  }},
-  {year: '2022', count: 21, additional: {
-    shool: [["Выпуск", "716 тыс."]],
-    university: [["Гос", "716 тыс."], ["Не гос", "716 тыс."]],
-    work: [["Вакансии", "716 тыс."]],
-  }},
-];
-
-const competensions = {
-  old: [
-    'Прялка',
-  ],
-  now: [
-    'массив',
-    'слов',
-  ],
-  future: [
-    'адронный',
-    'коллайдер',
-  ],
-}
+import regions from './data/regions.json';
+import directions from './data/directions.json';
+import data from './data/personnel.json';
+import competensions from './data/competensions.json';
 
 function App() {
   const [region, setRegion] = useState(null);
