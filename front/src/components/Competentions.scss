@@ -1,0 +1,80 @@
+.competentions {
+  padding-top: 30px;
+  .competentions-title {
+    cursor: pointer;
+    span {
+      text-decoration: underline;
+      text-decoration-style: dashed;
+    }
+    svg {
+      width: 18px;
+      height: 18px;
+      margin-left: 8px;
+    }
+  }
+
+  .competentions-content {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    & > * {
+      width: 50%;
+    }
+  }
+
+  .competentions-select {
+    position: relative;
+    background: url('../img/competentions.png') center bottom no-repeat;
+    width: 400px;
+    height: 300px;
+
+    button {
+      text-decoration: none;
+      border: none;
+      padding: 0;
+      background: none;
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      position: absolute;
+      text-transform: uppercase;
+
+      &.current {
+        text-decoration: none;
+      }
+
+      &:nth-child(1n) {
+        top: 40px;
+        left: 1px;
+      }
+
+      &:nth-child(2n) {
+        top: -15px;
+        left: 140px;
+      }
+
+      &:nth-child(3n) {
+        top: 40px;
+        left: 300px;
+      }
+    }
+  }
+
+  .competentions-list {
+    font-size: 18px;
+    margin-top: 10px;
+    text-transform: uppercase;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  &.isSpoilered {
+    .competentions-title svg {
+      transform: rotate(-90deg);
+    }
+    .competentions-content {
+      display: none;
+    }
+  }
+}

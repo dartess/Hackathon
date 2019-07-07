@@ -1,0 +1,16 @@
+.prognosis {
+  padding-top: 30px;
+  .chart {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+
+    .recharts-cartesian-axis-line {
+      display: none;
+    }
+
+    .recharts-cartesian-axis-tick-line {
+      display: none;
+    }
+  }
+}
