@@ -23,11 +23,11 @@ export default function Prognosis({data}) {
           <XAxis
             dataKey="year"
             tick={(p) => {
-              console.log(p);
               return <text 
                 {...p}
                 onClick={() => p.payload.index && setYear(p.payload.value)}
-                fontSize={12}
+                fontSize={14}
+                fill="#000"
                 y={p.y + 10}
                 className={cn('y-tick', {clickable: p.payload.index > 0, current: p.payload.value == year})}
               >
@@ -37,7 +37,7 @@ export default function Prognosis({data}) {
           />
           <YAxis
             domain={['dataMin - 3', 'dataMax + 3']}
-            tick={{fontSize: 12}}
+            tick={{fontSize: 14, fill: '#000'}}
           />
           <Line
             type="linear"
