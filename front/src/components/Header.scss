@@ -10,7 +10,7 @@ $cAccent: #3cddec;
     $cGray url('../img/bg.png') center/cover no-repeat;
   height: 100vh;
   padding-top: 1px;
-  transition: all 0.5s ease;
+  transition: height 0.5s ease;
   
   .head-line {
     position: relative;
@@ -22,6 +22,7 @@ $cAccent: #3cddec;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-transform: uppercase;
     h1 {
       margin: 0;
       font-size: 38px;
@@ -40,13 +41,14 @@ $cAccent: #3cddec;
     }
     div {
       text-transform: uppercase;
-      font-size: 10px;
+      font-size: 15px;
+      transition: all 0.2s ease;
     }
   }
 
   .form-success {
     color: $cAccent;
-    font-size: 10px;
+    font-size: 12px;
     position: absolute;
     top: 10px;
     right: 0;
@@ -186,9 +188,16 @@ $cAccent: #3cddec;
   }
   &--step-3 {
     height: 120px;
+    background: $cGray url('../img/bg.png') center/cover no-repeat;
 
     .head-line {
       margin-top: 25px;
+    }
+
+    .logo {
+      div {
+        font-size: 10px;
+      }
     }
 
     .form-success {
@@ -221,7 +230,7 @@ $cAccent: #3cddec;
       box-shadow: none;
       margin-bottom: 0px;
       margin-top: 0px;
-      font-size: 24px;
+      font-size: 17px;
     }
   }
 }

@@ -55,7 +55,7 @@ export default function Header(props) {
             <Select
               className="controls__select"
               classNamePrefix="select"
-              placeholder="ГРУППА НАПРАВЛЕНИЙ"
+              placeholder="РЕГИОН"
               isSearchable
               value={region}
               onChange={onChangeRegion}
@@ -66,7 +66,7 @@ export default function Header(props) {
             <Select
               className="controls__select"
               classNamePrefix="select"
-              placeholder="РЕГИОН"
+              placeholder="ГРУППА НАПРАВЛЕНИЙ"
               isSearchable
               value={direction}
               onChange={onChangeDirection}

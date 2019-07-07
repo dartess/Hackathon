@@ -7,11 +7,7 @@ import './img/bg.png';
 import './img/circle.png';
 import './img/competentions.png';
 
-const regions = [ // todo можно больше
-  { value: 'yaroslavl', label: 'Ярославская область' },
-  { value: 'kostroma', label: 'Костромская область' },
-  { value: 'ivanovo', label: 'Иваноская область' },
-];
+import regions from './regions.json'
 
 const directions = [ // todo можно больше
   { value: 'yaroslavl', label: 'Здравоохранение' },
@@ -21,7 +17,7 @@ const directions = [ // todo можно больше
 
 const data = [
   {year: '2018', count: 20, additional: {
-    shool: [["Выпуск", "716 тыс."]],
+    shool: [["Выпуск", "0 тыс."]],
     university: [["Гос", "716 тыс."], ["Не гос", "716 тыс."]],
     work: [["Вакансии", "716 тыс."]],
   }},
@@ -82,7 +78,7 @@ function App() {
         onSelectFile={onSelectFile}
       />
       {
-        step === 3 || true &&
+        step === 3 &&
         <>
           <Competentions
             data={competensions}
