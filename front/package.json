@@ -3,9 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
+    "node-sass": "^4.12.0",
+    "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-dropzone": "^10.1.5",
+    "react-scripts": "3.0.1",
+    "react-select": "^3.0.4",
+    "react-timer-hook": "^1.1.6",
+    "recharts": "^1.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
